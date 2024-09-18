@@ -4,4 +4,22 @@
         <a [routerLink]="['/admin/categories/add']" class=" btn btn-outline-primary" >Add Category</a>
     </div>
 
+    <ng-container *ngIf="categories">
+        <table class="table table-striped mt-3">
+            <thead>
+              <tr>
+                <th scope="col">Identity Number</th>
+                <th scope="col">Category Name</th>
+                <th scope="col">Url Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let category of categories">                
+                <td>{{category.id}}</td>               
+                <td>{{category.name}}</td>               
+                <td>{{category.urlHandle}}</td>               
+              </tr>             
+            </tbody>
+          </table>
+    </ng-container>
 </div>
