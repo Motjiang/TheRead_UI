@@ -27,13 +27,13 @@ export class EditCategoryComponent  implements OnInit, OnDestroy{
 
       if(this.id){
         this.categoryService.getCategoryById(this.id).subscribe({
-          next:(reposnse) => {
-            this.category = reposnse
+          next:(response) => {
+            this.category = response
           }
         });
       }
     }
-   })
+   });
   }
 
   ngOnDestroy(): void {
