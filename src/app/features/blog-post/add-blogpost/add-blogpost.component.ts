@@ -19,7 +19,7 @@ export class AddBlogpostComponent {
       featuredImageUrl: '',
       urlHandle: '',
       author: '',
-      publishedDate: new Date(),
+      publishDate: new Date(),
       isVisible: true
     }
   }

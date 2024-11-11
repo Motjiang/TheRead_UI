@@ -5,6 +5,6 @@ export interface AddBlogPost{
     featuredImageUrl:string;
     urlHandle:string;
     author:string;
-    publishedDate: Date;
+    publishDate: Date;
     isVisible: boolean;
 }
