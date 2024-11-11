@@ -9,12 +9,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./add-blogpost.component.css']
 })
 export class AddBlogpostComponent {
-  model: AddBlogPost
+  model: AddBlogPost;
 
   constructor(private blogPostService: BlogPostService, private router: Router) {
     this.model = {
       title: '',
-      shshortDescription: '',
+      shortDescription: '',
       content: '',
       featuredImageUrl: '',
       urlHandle: '',
